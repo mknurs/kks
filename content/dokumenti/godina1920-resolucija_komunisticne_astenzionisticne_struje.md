@@ -1,9 +1,9 @@
 ---
 title: Resolucija komunistične-astenzionistične struje v tržaški socialistični sekciji o revolucionarnem parlamentarizmu, sprejeta na sestanku dne 19. decembra 1920
-author: Frakcija komunistov-astenzionistov, tržaška skupina; Dragotin Godina
-source: Delo, 24. XII. 1920
-orig_date: 1920
-date: 2020-09-08
+author:
+  - Frakcija komunistov-astenzionistov, tržaška skupina
+  - Dragotin Godina
+source: Delo, 24. 12. 1920
 template: post
 ---
 

@@ -1,12 +1,10 @@
 ---
-title: Notes on Architecture
+title: Note sull'architettura
 author: Antonio Gramsci
-source: Notes on Architecture, 2017
+source: Notes on Architecture, Divisare, 2017.
 lang: it
 template: post
 ---
-
-<toc />
 
 ## L'architettura nuova. Speciale carattere obbiettivo dell'architettura[^1]
 

@@ -1,12 +1,10 @@
 ---
 title: Notes on Architecture
 author: Antonio Gramsci
-source: Notes on Architecture, Divisare, 2017
+source: Notes on Architecture, Divisare, 2017.
 lang: en
 template: post
 ---
-
-<toc />
 
 ## New architecture. The special, objective character of architecture[^1]
 

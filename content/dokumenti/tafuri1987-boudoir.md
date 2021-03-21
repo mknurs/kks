@@ -3,7 +3,9 @@ title: L'architecture dans le boudoir
 description: >-
   Problem kritike je torej nekaj drugega. V panorami današanje arhitekture ne verjamemo v "Nove Tendence". Vendar pa ni dvoma, da obstaja zelo razširjen pristop, ki skuša obnoviti razsežnost objekta in njegov izjemni značaj: objektu odtegne njegove ekonomske in funkcionalne razsežnosti ter ga fiksira kot izjemni in torej surrealni trenutek, saj ga v toku "stvari", ki jih poraja produkcijski sistem, postavlja v oklepaj. Ko gre za takšne operacije, lahko govorimo o nekakšni "Architecture dans le boudoir".
 author: Manfredo Tafuri
-source: Arhitektov bilten, št. 91/92, 1987, str. 40–52 in št. 92/93, 1988, str. 40–49.
+source:
+  - AB, št. 91/92, 1987, str. 40–52.
+  - AB, št. 92/93, 1988, str. 40–49.
 template: post
 ---
 
