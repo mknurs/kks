@@ -1,7 +1,7 @@
 <nav role="navigation" tabindex="-1" id="nav">
 <!-- internal navigation -->
   <ul class="flex-nav">
-    {% for page in pages(depth=null) if page.meta.template != "post" %}
+    {% for page in pages(depth=null)|sort_by(["listing"]) if page.meta.template != "post" %}
     <li>
       <a
         href="{{ page.url }}"
