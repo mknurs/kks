@@ -1,0 +1,23 @@
+<a href="{{ page.url }}" class="card">
+  <article>
+    <h2>
+      {{ page.title }}
+    </h2>
+
+    <address>
+      {{ page.author }}
+      {% if page.meta.source %}
+        <span>{{ page.meta.source }}</span>
+      {% endif %}
+        <time datetime="{{ page.modificationTime|date('Y-m-d') }}">
+          ({{ page.modificationTime|date("d. m. Y G:i") }})
+        </time>
+    </address>
+
+    {% if page.description %}
+    <blockquote>
+      {{ page.description|markdown }}
+    </blockquote>
+    {% endif %}
+  </article>
+</a>

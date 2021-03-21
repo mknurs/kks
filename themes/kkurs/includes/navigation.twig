@@ -1,0 +1,22 @@
+<nav role="navigation" tabindex="-1" id="nav">
+  <ul class="flex-nav">
+    {% for page in pages(depth=null) if page.meta.template == "list" %}
+    <li>
+      <a
+        href="{{ page.url }}"
+        class={{ page.id == current_page.id ? "active" : ""}}
+      >
+        {{ page.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {# add second level nav, and custom links #}
+  <ul class="flex-nav">
+    {% for title,url in config.external %}
+    <li>
+      <a href="{{ url }}">{{ title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

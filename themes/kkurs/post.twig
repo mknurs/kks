@@ -1,0 +1,47 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<main role="main" id="main" class="post">
+  <article lang="{{ meta.lang ? meta.lang : 'sl' }}">
+    <h1>
+      {{ meta.title }}
+    </h1>
+
+    <address>
+      {{ meta.author }}
+      {% if meta.source %}
+      <span>
+        {{ meta.source }}
+      </span>
+      {% endif %}
+      <time datetime="{{ meta.modificationTime|date('Y-m-d') }}">
+        ({{ meta.modificationTime|date("d. m. Y G:i") }})
+      </time>
+    </address>
+
+    {{ content }}
+  </article>
+
+  {% for page in pages(current_page.id) %}
+  <article lang="{{ page.meta.lang ? page.meta.lang : 'sl' }}">
+    <h1>
+      {{ page.title }}
+    </h1>
+
+    <address>
+      {{ page.author }}
+      {% if page.meta.source %}
+      <span>
+        {{ page.meta.source }}
+      </span>
+      {% endif %}
+      <time datetime="{{ page.modificationTime|date('Y-m-d') }}">
+        ({{ page.modificationTime|date("d. m. Y G:i") }})
+      </time>
+    </address>
+
+    {{ page.id|content }}
+  </article>
+  {% endfor %}
+</main>
+{% endblock %}

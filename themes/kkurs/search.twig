@@ -1,0 +1,57 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<main role="main" id="main" class="search">
+{% set pagesArr = (
+    pages("dokumenti", depth=null) +
+    pages("zapiski", depth=null)
+  )|filter(p => not p.hidden) %}
+<form id="search_form" action="{{ "search"|link }}">
+  {# <label for="search_input">Išči na strani:</label> #}
+  <input type="search" id="search_input" name="q" value="{{ search_terms|e('html_attr') }}" placeholder="išči kontrakurs"/>
+  <button type="submit" id="search_submit">išči</button>
+</form>
+<script type="text/javascript">
+  // Intercept form submit and go to the search results page directly, avoiding a redirect
+  document.getElementById('search_form').addEventListener('submit', function (e) {
+    var search_terms = document.getElementById('search_input').value;
+    location.href = '{{ "search"|link }}/' + encodeURIComponent(search_terms);
+    e.preventDefault();
+  });
+</script>
+
+{% if search_terms %}
+  {% set search_results = pagesArr|apply_search %}
+  {% if search_results %}
+    <h1>Zadetki za <i>{{ search_terms|e('html') }}</i></h1>
+    {% for page in search_results %}
+      <article>
+        <h2>
+          <a href="{{ page.url }}">
+            {{ page.title }}
+          </a>
+        </h2>
+
+        <address>
+          {{ page.author }}
+          {% if page.meta.source %}
+            <span>{{ page.meta.source }}</span>
+          {% endif %}
+            <time datetime="{{ page.modificationTime|date('Y-m-d') }}">
+              ({{ page.modificationTime|date("d. m. Y G:i") }})
+            </time>
+        </address>
+
+        {% if search_terms in page.raw_content|split("---", 3)[2] %}
+          {{ ("…" ~ page.raw_content|split("---", 3)[2]|split(search_terms, 2)[0]|slice(-200) ~ "**" ~ search_terms ~ "**" ~ page.raw_content|split("---", 3)[2]|split(search_terms, 2)[1]|slice(0, 200) ~ "…")|markdown }}
+        {% elseif search_terms|capitalize in page.raw_content|split("---", 3)[2] %}
+        {{ ("…" ~ page.raw_content|split("---", 3)[2]|split(search_terms|capitalize, 2)[0]|slice(-200) ~ "**" ~ search_terms|capitalize ~ "**" ~ page.raw_content|split("---", 3)[2]|split(search_terms|capitalize, 2)[1]|slice(0, 200) ~ "…")|markdown }}
+        {% endif %}
+      </article>
+    {% endfor %}
+  {% else %}
+    <p>Ni zadetkov za {{ search_terms|e('html') }}.</p>
+  {% endif %}
+{% endif %}
+</main>
+{% endblock %}

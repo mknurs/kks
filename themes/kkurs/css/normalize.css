@@ -1,0 +1,497 @@
+/*
+* normalize
+*
+* @author  mknurs
+* @license http://opensource.org/licenses/MIT The MIT License
+* @version 0.1
+*/
+/*
+variables
+*/
+:root {
+  --blue: #0000EE;
+  --purple: #551A8B;
+  --red: #FF0000;
+
+  --link: var(--blue);
+  --visited: var(--purple);
+  --active: var(--red);
+  --mark: var(--red);
+}
+/*
+reset
+*/
+:root {
+  box-sizing: border-box;
+}
+* {
+  all: unset;
+  /* box */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+
+  /* color */
+  color: inherit;
+  background: inherit;
+  background-color: inherit;
+  border: inherit;
+  border-color: inherit;
+
+  /* font */
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/*
+sectioning root
+*/
+body {
+  display: block;
+  /* margin: 8px; */
+}
+body:focus {
+  outline: none;
+}
+
+/*
+content sectioning
+*/
+/* block semantic elements */
+address,
+article,
+aside,
+footer,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+  max-width: 100%;
+}
+
+/* specific elements */
+address {
+  font-style: italic;
+}
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1;
+  font-weight: bold;
+  hyphens: none;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+h2 {
+  font-size: 1.7rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1.12rem;
+}
+h6 {
+  font-size: 1em;
+}
+
+/*
+text content
+*/
+/* text semantic elements */
+blockquote,
+dd,
+div,
+dl,
+dt,
+figcaption,
+figure,
+hr,
+ol,
+p,
+pre,
+ul {
+  display: block;
+}
+
+/* specific elements */
+blockquote,
+figure {
+  max-width: 80%;
+  margin: 1em auto 2em;
+}
+figcaption {
+  text-align: center;
+}
+hr {
+  margin: 0.5rem auto;
+  /* default values
+  border-style: inset;
+  border-width: 1px
+  */
+}
+p,
+pre {
+  margin: 1em 0;
+}
+pre {
+  font-family: monospace;
+  white-space: pre;
+}
+
+/* lists */
+dl,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin-left: 1em;
+}
+ol,
+ul {
+  padding-left: 10%;
+}
+ol {
+  list-style-type: decimal;
+}
+ul {
+  list-style-type: disc;
+}
+li {
+  display: list-item;
+}
+
+/*
+inline text semantics
+*/
+/* inline semantic elements */
+a,
+abbr,
+b,
+bdi,
+bdo,
+br,
+cite,
+code,
+data,
+dfn,
+em,
+i,
+kbd,
+mark,
+q,
+s,
+samp,
+small,
+span,
+strong,
+sub,
+sup,
+time,
+u,
+var,
+wbr {
+  display: inline;
+}
+
+/* anchors */
+a {
+  text-decoration: underline;
+}
+a:link {
+  color: var(--link);
+  cursor: pointer;
+}
+a:visited {
+  color: var(--visited);
+}
+a:link:active {
+  color: var(--active);
+}
+a:visited:active {
+  color: var(--active);
+}
+
+/* inline character styles */
+b {
+  font-weight: bold;
+}
+bdo {
+  unicode-bidi: bidi-override;
+}
+cite {
+  font-style: italic;
+}
+code {
+  font-family: monospace;
+}
+dfn {
+  font-style: italic;
+}
+em {
+  font-style: italic;
+}
+i {
+  font-style: italic;
+}
+kbd {
+  font-family: monospace;
+}
+mark {
+  color: var(--mark);
+}
+s {
+  text-decoration: line-through;
+}
+samp {
+  font-family: monospace;
+}
+small {
+  font-size: smaller;
+}
+strong {
+  font-weight: bold;
+}
+time {
+  font-style: italic;
+}
+u {
+  text-decoration: underline;
+}
+var {
+  font-style: italic;
+}
+
+/* quote */
+q::before {
+  content: open-quote;
+}
+q::after {
+  content: close-quote;
+}
+
+/* subscript and superscript */
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+  line-height: 0;
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+  line-height: 0;
+}
+
+/*
+image and multimedia
+*/
+/*
+area,
+audio,
+map,
+track,
+video {
+
+}*/
+img {
+  display: block;
+  max-width: 100%;
+}
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+embedded content
+*/
+/*
+embed,
+iframe,
+object,
+param,
+picture,
+source {
+
+}*/
+
+/*
+scripting
+*/
+/*
+canvas,
+noscript,
+script {
+
+}*/
+script {
+  display: none;
+}
+/*
+demarcating edits
+*/
+del {
+  text-decoration: line-through;
+}
+ins {
+  text-decoration: underline;
+}
+
+/*
+table content
+*/
+caption {
+  display: table-caption;
+  text-align: center;
+}
+col {
+  display: table-column;
+}
+colgroup {
+  display: table-column-group;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 0.5rem 0;
+	font-size: smaller;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+}
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+tfoot {
+  display: table-footer-group;
+  vertical-align: middle;
+}
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+}
+
+/*
+forms
+*/
+button,
+fieldset,
+form,
+input,
+label,
+legend,
+meter,
+optgroup,
+option,
+progress,
+select,
+textarea {
+  display: block;
+}
+
+/* specific elements */
+button {
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--link);
+  cursor: pointer;
+  margin: 1em;
+}
+datalist {
+  display: none;
+}
+form {
+  max-width: 80%;
+  margin: 1em auto 2em;
+}
+output {
+  display: inline;
+}
+textarea {
+  border: thin solid;
+}
+
+/* input */
+input[type='search'],
+input[type='password'] {
+  border-bottom: thin solid;
+}
+input[type='submit'] {
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--link);
+  cursor: pointer;
+  margin: 1em;
+}
+input[type='submit']:active {
+  color: var(--active);
+}
+
+/*
+interactive elements
+*/
+details,
+dialog,
+menu,
+summary {
+  display: block;
+}
+menu {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  /* padding-left: 40px; */
+  padding-left: 10%;
+}
+
+/*
+meta
+*/
+head {
+  display: none;
+}
+link {
+  display: none;
+}
+style {
+  display: none;
+}
+title {
+  display: none;
+}

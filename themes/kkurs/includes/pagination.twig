@@ -1,0 +1,16 @@
+{% if maxpage > 1 %}
+<nav id="pagination">
+  <ul class="flex-nav">
+    {% for i in 1..maxpage %}
+    <li>
+      <a
+        href="{{ base_url ~ '/?' ~ httpParam ~ '=' ~ i }}"
+        {% if i == basepage %}
+        class="active"
+        {% endif %}
+      >{{ i }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}

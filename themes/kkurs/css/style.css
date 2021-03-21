@@ -1,0 +1,183 @@
+/*
+* prolerue theme
+*
+* @author  mknurs
+* @license http://opensource.org/licenses/MIT The MIT License
+* @version 0.1
+*/
+
+/*
+variables
+*/
+:root {
+  --txt-width: 60ch;
+}
+
+/*
+fonts
+*/
+@font-face {
+  font-family: Alegreya;
+  src: url(../font/Alegreya-Regular.ttf)
+}
+@font-face {
+  font-family: Alegreya;
+  src: url(../font/Alegreya-Italic.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: Alegreya;
+  src: url(../font/Alegreya-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Alegreya;
+  src: url(../font/Alegreya-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*
+base
+*/
+html {
+  font-family: 'Alegreya', serif;
+  font-size: clamp(16px, calc(1vw + 1vh + 0.5vmin), 22px);
+  line-height: 1.5;
+  hyphens: auto;
+}
+hr::before {
+  content: '***';
+  display: block;
+  text-align: center;
+}
+::selection {
+  background-color: var(--visited);
+  color: white;
+}
+.active {
+  font-weight: bold;
+}
+address {
+  display: grid;
+}
+article {
+  padding: 0.5rem;
+}
+
+/*
+layout
+*/
+#header,
+#nav,
+#main,
+#footer {
+  margin: 0 auto;
+  max-width: var(--txt-width);
+}
+
+/*
+flex nav
+*/
+.flex-nav {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
+}
+.flex-nav>li {
+  margin: 0 1rem;
+}
+
+/*
+index
+*/
+.index {
+  display: grid;
+  gap: 0.5rem;
+}
+/*
+card
+*/
+.card {
+  display: grid;
+  text-decoration: none;
+}
+.card>* {
+  grid-area: 1 / 1 / -1 / -1;
+}
+.card>article>* {
+  text-decoration: underline;
+}
+.card>article {
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+.card>svg {
+  z-index: -1;
+  fill: currentColor;
+}
+
+/*
+single
+*/
+.post {
+  max-width: unset!important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(0.5 * var(--txt-width)), 1fr));
+  justify-items: center;
+}
+.post>article {
+  max-width: var(--txt-width);
+}
+#toc>ul {
+  list-style: none;
+  display: block;
+}
+.toc-h2 {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.toc-h3 {
+  margin-left: 2rem;
+}
+.toc-h4 {
+  margin-left: 3rem;
+}
+/*
+list
+*/
+.list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+/*
+search, lock
+*/
+.search,
+.lock {
+  display: grid;
+  gap: 0.5rem;
+}
+.search>form,
+.lock>form {
+  display: grid;
+}
+.search>form>button,
+.lock>form>button {
+  place-self: center;
+}
+.search>article {
+  font-size: smaller;
+}
+
+/*
+footer
+*/
+#footer {
+  text-align: center;
+  color: white;
+}
