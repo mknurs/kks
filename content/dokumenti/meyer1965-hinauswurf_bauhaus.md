@@ -1,9 +1,7 @@
 ---
 title: Mein Hinauswurf aus dem Bauhaus
 author: Hannes Meyer
-orig_date: 1930
-source: Hannes Meyer Bauten, Projekte und Schriften / Buildings, projects and writings, 1965
-date: 2020-10-22
+source: Hannes Meyer Bauten, Projekte und Schriften / Buildings, projects and writings, 1965.
 lang: de
 template: post
 ---
@@ -42,6 +40,6 @@ Herr Oberbürgermeister! Der Ruhm ist die Summe aller Missverstiandnisse, welche
 
 Herr Oberbürgermeister! Sie wollen nunmehr den Geist des Marxismus aus dem von mir so sehr verseuchten Bauhaus treiben. Moral, Zucht, Sitte und Ordnung sollen am Arm der Musen von neuem Einkehr halten. Als meinen Nachfolger haben Sie sich Mies van der Rohe verschreiben lassen, durch Gropius’ Rat, nicht etwa – satzungsgemiss – durch der Meister Rat. Mein bedauernswerter Kollege soll wohl mit der Spitzhacke und im seligen Gedenken an die moholytische Vergangenheit des Hauses meine Bauhausarbeit abbrechen. Mit den allerscharfsten Mitteln soll wohl dieser verruchte Materialismus bekampft und damit das lebendige Leben aus der unschuldsweissen Bauhauskiste geklopft werden. Haut ihn, den Marxismus! Und dazu haben Sie sich ausgerechnet Mies van der Rohe hergeholt, den Schopfer des Denkmals für Karl ... .LU ND meister, soll ich (ein letztes Mal) Mitleid mit lhnen haben?
 
-Herr Oberblirgermeister, meine Kollegin von vorhin, das ebenfalls fristlos entlassene Dienstmadchen, die mit die nackten Beenekens, behauptet, sie verstehe meine Bauhaus-Affire nicht. 
+Herr Oberblirgermeister, meine Kollegin von vorhin, das ebenfalls fristlos entlassene Dienstmadchen, die mit die nackten Beenekens, behauptet, sie verstehe meine Bauhaus-Affire nicht.
 
 Herr Oberburgermeister, wiederum stehe ich an des Miadchens Seite: Ich durchschaue alles. Ich verstehe nichts.

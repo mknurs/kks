@@ -1,9 +1,7 @@
 ---
 title: My Dismissal from the Bauhaus
 author: Hannes Meyer
-orig_date: 1930
-source: Hannes Meyer Bauten, Projekte und Schriften / Buildings, projects and writings, 1965
-date: 2020-10-22
+source: Hannes Meyer Bauten, Projekte und Schriften / Buildings, projects and writings, 1965.
 lang: en
 template: post
 ---

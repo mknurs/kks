@@ -1,7 +1,6 @@
 ---
 title: '"Das rote Wien". Politica e forma della residenza nella Vienna socialista, 1919–1933'
 author: Manfredo Tafuri
-orig_date: 1995
 source:
 lang: it
 template: post

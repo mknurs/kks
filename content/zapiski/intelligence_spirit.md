@@ -1,12 +1,7 @@
 ---
-Title: Intelligence and Spirit
-Description: mind *is* only what it *does*, what it does is first and foremost realized (pogojeno) by the *sociality* of agents, which itself is primarily (and ontologically) constituted by the semantic space of a public *language*
-Source: Negarestani, R. Intelligence and Spirit. 2018
-Date: 2020-09-21
-Template: post
+title: Intelligence and Spirit
+template: post
 ---
-
-<toc />
 
 ## Between Conception and Transformation
 
@@ -106,7 +101,7 @@ object of thought (objekt)
 
 !kaj je teorija
 
-> [A]ny systematic theory should make explicit how such elements hang together within it. 
+> [A]ny systematic theory should make explicit how such elements hang together within it.
 
 > [A]ny genuinely systematic theory should also elaborate in what manner it is an extension of philosophy of mind.
 

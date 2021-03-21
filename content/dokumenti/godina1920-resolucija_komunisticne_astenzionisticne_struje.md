@@ -3,7 +3,7 @@ title: Resolucija komunistične-astenzionistične struje v tržaški socialisti�
 author:
   - Frakcija komunistov-astenzionistov, tržaška skupina
   - Dragotin Godina
-source: Delo, 24. 12. 1920
+source: Delo, 24. 12. 1920.
 template: post
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: Lavoro intellettuale e sviluppo capitalistico
 author: Manfredo Tafuri
-orig_date: 1970
-source: Contropiano, 2, 1970
-date: 2020-10-22
+source: Contropiano, 2, 1970.
 lang: it
 template: post
 ---

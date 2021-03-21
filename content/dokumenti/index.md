@@ -1,5 +1,5 @@
 ---
-Title: dokumenti
-Template: list
+title: dokumenti
+template: list
 Placing: 3
 ---

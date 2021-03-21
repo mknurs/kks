@@ -1,6 +1,5 @@
 ---
 title: Projekt in utopija
-date: 2020-03-23
 template: post
 ---
 
@@ -37,7 +36,7 @@ Estetika pitoresknega
 
 Tafuri begins with “bourgeois art” and identifies it as a tool or process that ultimately seeks catharsis and the sublation of contradiction by “understanding and absorbing its causes”. This may seem abstract but he points immediately to the city, or generally speaking urban form, as one such contradictory subject. This is a need: the capitalist system needs to “represent its own anguish to continue to function”
 
-“culture (that is, bourgeois intelligentsia) has identified its own function as mediator (between contradiction and catharsis) in such ideological terms… its cunning has reached the point where it imposes the forms of disputation and protest upon its own products. The higher the sublimation of the conflicts on a formal plane, the more hidden the cultural and social structures actually expressed by that sublimation.” Obviously, Tafuri’s point is that architectural discourse, chattering to itself, is concerned with the formal and aesthetic, to the extent any fundamental causes are ignored 
+“culture (that is, bourgeois intelligentsia) has identified its own function as mediator (between contradiction and catharsis) in such ideological terms… its cunning has reached the point where it imposes the forms of disputation and protest upon its own products. The higher the sublimation of the conflicts on a formal plane, the more hidden the cultural and social structures actually expressed by that sublimation.” Obviously, Tafuri’s point is that architectural discourse, chattering to itself, is concerned with the formal and aesthetic, to the extent any fundamental causes are ignored
 
 Tafuri’s “unitary history” relies on tracing the movement of what he calls the “Enlightenment dialectic”. he breaks these into themes:
 - architect’s role as ‘ideologist of society'
@@ -84,20 +83,20 @@ The maximal individualism fascilitated by the minimal functional support (arch a
 
 What is formalism? What is rationalism?
 
-American Jeffersonianism ideologically ‘completes’ Europe’s contradictions between nascent capitalist urbanism of accumulation and the Laugier-esque type ‘city forest’: “the ethic of free trade here encountered the pioneering spirit" 
+American Jeffersonianism ideologically ‘completes’ Europe’s contradictions between nascent capitalist urbanism of accumulation and the Laugier-esque type ‘city forest’: “the ethic of free trade here encountered the pioneering spirit"
 
 ### Naturalizacija mesta
 
 > Kaj pomeni, na ideološki ravni, priličenje mesta *naravnemu* objektu? Ta predlog na eni strani kaže sublimacijo fiziokratskih teorij: mesto se ne bere kot struktura, ki z lastnimi mehanzmi akumulacije določa spremembo izkoriščanja zemljišča in agrarnih in zemljiških rent. Če je mesto pojav, ki se priličuje "naravnemu" procesu, nezgodovinskemu zato, ker je univerzalen, je osvobojeno vsakega upoštevanja, ki je strukturalne narave. Oblikovni "naturalizem" služi v prvem trenutku za prepričevanje o *objektivni* nunjosti procesov, ki jih je sprožila predrevolucionarna buržoazija; v drugem trenutku služi pri utrditvi in zaščiti doseženih pridobitev pred vsako nadaljnjo spremembo. (str. 9)
 
 12
-: 
+:
 
 a
-: 
+:
 
 b
-: 
+:
 
 13
 : "Glede na ta namen postane vloga ideologije določujoča."
@@ -136,7 +135,7 @@ thus: “modern architecture as a whole had the means to create an ideological s
 From 1850-1931, a ’three phase’ history:
 stage 1: urban ideology “overcomes” late romantic mythology (romantic eclecticism)
 stage 2: the artistic avant garde develops in order for “capitalism to represent itself” and individualize unsatisfied needs, to be further depicted in art
-stage 3: architectural ideology (similar or diff from urban ideology?) becomes the ideology of the plan (aka architecture is relegated to the rear-guard, fully subservient to capital) 
+stage 3: architectural ideology (similar or diff from urban ideology?) becomes the ideology of the plan (aka architecture is relegated to the rear-guard, fully subservient to capital)
 
 ## 2. Forma kot regresivna utopija
 
@@ -160,7 +159,7 @@ As the “destiny of the city” increasingly becomes its place in the productio
 
 “Humanitarian utopianism and radical criticism had an unexpected effect: they convinced the bourgeoisie to examine for themselves this problem of the accord between rationality and irrationality.”
 
-The bourgeoisie, in absorbing the insights of critiques that expose the reality of the appearance of the city’s claims to rational organization, yet irrational distribution of social wealth, provoke a crisis in bourgeois ideology, and thus too a conflict in the uniformity of this ideology in claims to legitimacy. Utopia’s presupposition of dystopia renders it fatally flawed to resolve the irrationalities of the world as it appears to the project. Ultimately all that is seen is an option between alternative mystifications, and political will rendered impotent by the illusions to its independence from the conditions that necessitate it. 
+The bourgeoisie, in absorbing the insights of critiques that expose the reality of the appearance of the city’s claims to rational organization, yet irrational distribution of social wealth, provoke a crisis in bourgeois ideology, and thus too a conflict in the uniformity of this ideology in claims to legitimacy. Utopia’s presupposition of dystopia renders it fatally flawed to resolve the irrationalities of the world as it appears to the project. Ultimately all that is seen is an option between alternative mystifications, and political will rendered impotent by the illusions to its independence from the conditions that necessitate it.
 
 “For all that has been said, it will be seen that this problem is intrinsic to the formation of the urban ideology. And in the abstract, it is familiar to all the figurative arts of the nineteenth century, since the very origin of romantic eclecticism was the redemption of ambiguity as a critical value in itself: exactly that ambiguity pushed to the extreme by Piranesi. What had allowed Piranesi to mediate the terrifying prophecy of the eclipse of the sacred, with primitivistic nostalgia and flights into the sublime, is also what allowed romantic eclecticism to make itself the interpreter of the merciless commercialization of the human environment, by immersing in it particles of completely worn-out values, presented in all their contorted muteness and falsity, as if to demonstrate that no subjective effort can regain an authenticity lost forever.” ---
 
@@ -265,7 +264,7 @@ Organization and planning at the urban level, specifically with Rathenau (democr
 
 The intellectual’s anti-institutional phase engages w capital (as “abstract technology, or the universal productive subject") and the masses (equally abstract, but existing as a sort of ethical check). Unifying these two ideologically resulted, again, in the slip from Hegel to Keynes, in capitalistic-industrial utopia, and ideology becomes totally bound up with work and its organization in general. “Ideology ended, in most cases and with a surprising consistency of behavior, by precariously straddling the borderline between these two choices"
 
-“Utopia became of service to development as a reserve of tendentious models and as an arm for the extraction of consensus.” 
+“Utopia became of service to development as a reserve of tendentious models and as an arm for the extraction of consensus.”
 
 “Autonomy of formal construction no longer necessarily meant controlling daily experience through form. They were now disposed to accept the idea that it is experience that dominates the subject"
 
@@ -277,7 +276,7 @@ Dadaist mechanization, Futurism, formal and universal proletarianization, total 
 
 ‘Positive thought’ is positivism, resignation to which is necessary for the continued “perpetuation of the intellectual disciplines”. The provision of a reason for intellectual work’s continuation is not the highest calling of that work
 
-The Long War against value continues, and freedom from value must now “impose themselves with the force of a datum…any residue of value must be violently desecrated" 
+The Long War against value continues, and freedom from value must now “impose themselves with the force of a datum…any residue of value must be violently desecrated"
 
 “Ultimately the problem is that of evaluating the significance given in the early part of our century to utopia as a project.”
 
@@ -310,11 +309,11 @@ The Long War against value continues, and freedom from value must now “impose 
 architecture & utopia ch4
 “The experience of the "tragic" is the ex­perience of the metropolis” <- ‘downfall of reason’
 Benjamin, criticizing Hegel and Engels, “…the facility and ease with which the Parisian flaneur moves in the crowd has become the natural behavior of the modern user of the metropolis.”
-Baudelaire seems to consider the city and the mass to be one and the same, whereas Barbier describes the mass and the city independently 
-“Objective­ly structured like a machine for the extraction of sur­plus value, in its own conditioning mechanisms the city reproduces the reality of the ways of industrial produc­tion.” 
-“….invasion of the ways of production in the urban morphology…” 
+Baudelaire seems to consider the city and the mass to be one and the same, whereas Barbier describes the mass and the city independently
+“Objective­ly structured like a machine for the extraction of sur­plus value, in its own conditioning mechanisms the city reproduces the reality of the ways of industrial produc­tion.”
+“….invasion of the ways of production in the urban morphology…”
 ok so from what i gather he seems to be saying that the task of the avant-garde is to try and convert the shock resulting from the dissolution of value into … what exactly? not sure
-Piranesi and Picasso ‘make universal’ what may be considered completely ‘particular’ <- some kind of fetishism? 
+Piranesi and Picasso ‘make universal’ what may be considered completely ‘particular’ <- some kind of fetishism?
 the ‘new richness’ of spirit cannot be sought outside the ‘new poverty’ assumed by mechanical civilization <- according to De Stijl
 “Chaos and order were thus sanctioned by the histor­ical avant-garde movements as the "values," in the pro­ per sense of the term, of the new capitalist city.”
 ‘that once come within the sphere of the reorganization of production in gen­eral, architecture and urbanism would have to be the objects and not the subjects of the Plan.’
@@ -357,7 +356,7 @@ but chaos is also “liberty”, once order identifies chaos as its other - the 
 industrial design is conceived of as exploiting utopia as a method of organizing production, or the visiting of ideology onto the concrete disorder of real production cycles
 At the architectural level, industrial design holds, reapplied as ‘building production’. This planning or architectural and urbanism in the abstract refers to the restructuring of production and consumption in general, mediating realism and utopia
 thus arch and urbanism become the objects and not the subjects of the Plan, a possibility for radically reorganizing society rather than working towards revolution
-The ‘machine for living’ is actually a process of making proposals for model forms of production and consumption. ‘forms’ and ‘objects’ are replaced with processes mediated by forms, that is, objects placed in relation to the public, which have become participatory, demanding a heroically consumptive attitude 
+The ‘machine for living’ is actually a process of making proposals for model forms of production and consumption. ‘forms’ and ‘objects’ are replaced with processes mediated by forms, that is, objects placed in relation to the public, which have become participatory, demanding a heroically consumptive attitude
 
 ## 5. "Radikalna" arhitektura in mesto
 
@@ -420,15 +419,15 @@ anti urban including “advanced plans for the reorganization of residential qua
 
 The architect takes on a grand role in Corbusier’s project, he is integrating the public into the production process through *organization*
 
-‘The restructuring of the total urban space and land­scape necessitates the rationalization of the overall organization of the city machine.’ 
+‘The restructuring of the total urban space and land­scape necessitates the rationalization of the overall organization of the city machine.’
 
 Corbusier’s plan represents the most ‘advanced’ form of architectural thinking- to integrate the entire public into the process- but why is it that it has failed?
 
 ‘Thus our initial hypothesis is confirmed. Architec­ture as ideology of the plan is swept away by the reality of the plan when, the level of utopia having been superseded, the plan becomes an operative mechanism.’ <- not sure exactly what this means?? but seems central
 
-This new urban ideology accepts the chaos of the city as ‘inevitable’- and retreats to fantasizing about ‘aesthetic societies’ 
+This new urban ideology accepts the chaos of the city as ‘inevitable’- and retreats to fantasizing about ‘aesthetic societies’
 
-ok i think the second half is a bit above my head 
+ok i think the second half is a bit above my head
 
 KR notes:
 
@@ -445,7 +444,7 @@ what exists are reconsidered as objects (Casbah, Fort-l’Empereur) to be plugge
 unity is HUGE for Corbusier - a general conception of Humanity free of class divides (precisely as these persist in his own work): proletariat in coastal serpentine and upper middle class remain in Fort-l’Empereur)
 people are made to participate in the city as intellectual, critical subjects:
 Van Nelle factory: “The Van Nelle tobacco factory in Rotterdam, a creation of the modern age, has removed all the former connotation of despair from that word ‘proletarian’. And this deflection of the egoistic property instinct towards a feeling for collective action leads to a most happy result: the phenomenon of personal participation in every stage of the human enterprise. Labor retains its fundamental materiality, but it is enlightened by the spirit. I repeat, everything lies in that phrase: a proof of love. It is to this goal, by means of new administrative forms that will purify and amplify it, that we must lead our modern world. Tell us what we are, what we can do to help, why we are working… If you show us such plans and explain them to us, then the old dichotomy between ‘haves’ and despairing ‘have-nots’ will disappear. There will be but a single society, united in belief and action… We will live in an age of strictest rationalism, and this is a matter of conscience.” (from The Radiant City)
-that said, the urban system he proposes must formally dispense with it - pure topography does not attend to adjacencies or spatial hierarchies 
+that said, the urban system he proposes must formally dispense with it - pure topography does not attend to adjacencies or spatial hierarchies
 (time-space compression?)
 the construction of a “unitary image” imbued with self-sufficient/manmade symbolic values, the layout and juxtaposition of objects that overcomes the technical distance of the plan by arraying “enormous objects” in a way that implies or creates meaning
 contradiction between rational and irrational is resolved into the heroic composition of liberty and necessity through moralization of the image - liberty pertaining to elevated consciousness thru participation and necessity through the subjugation of the plan
@@ -458,7 +457,7 @@ this success produces the crisis in architecture we still feel today, tho cities
 involutionary criticism of internal problems above all
 thus, the reappearance of art in interest of mediating chaos, that is, mediating distance between chaos utopia, and representing chaos as rich, natural, fecund, fetishizable
 usage of Marcuse’s ‘Great Refusal’ (and perhaps a bit of Eros & Civilization’s ’surplus repression’) to relocate revolution as ‘potential’ in imagination itself, buttressed by technological progress as such, tech which makes it possible to make art demiurgically, without limits (per Restany) or institutional possibilities of self-disalienation through art (lol Archizoom) and ‘play’ (New Babylon, situationism)
-“fleeting flashes of static emptiness” (the afterlife of shock) 
+“fleeting flashes of static emptiness” (the afterlife of shock)
 
 ## 7. Arhitektura in njen dvojnik: semiologija in formalizem
 
@@ -498,12 +497,12 @@ namig kaj pa so naloge arhitekture
 - In the last instance, there is no class aesthetic, art, or architecture, but only a class critique of these categories as elements of the city. What’s more, Marxist critique must detonate the unifying “wholes” of art/architecture/city and expose their inner workings and the true level and permeation of their development
 - Internal criticism is irrelevant, the tired ‘ambiguous’ gaspings of a dead bourgeois tradition. Architecture as a whole must be critiqued - not towards a new design, but towards understanding the political-economic score, and as such, a new architecture
 
-Kate’s notes: 
+Kate’s notes:
 Basic statement of the problem (p. 170-173)
 - making buildings has been assimilated into planning and this reduces the “usefulness of architectural ideology.”
 - Alternatively, the economic and social contradictions are heightened by the city and therefore have the potential to stop this reorganization of capital.
 - The powers that be are not interested in taking on the plans and ideas put forward by the modernist movements, as they would not be efficient for organizing capital within this urban framework.
-- Radicals who continue to advocate for earlier planning ideologies that were ultimately rejected by capitalist development become neutered if not co-opted by that development. 
+- Radicals who continue to advocate for earlier planning ideologies that were ultimately rejected by capitalist development become neutered if not co-opted by that development.
 - Urban planning itself is a battlefield of class struggle.
 - Any class struggle happening regarding the organization of urban space have to deal with the arcane bullshit of urban planning’s technocracy.
 - The task at hand thus lies in pitting the organized working class directly against the latest stages of capitalist development.
@@ -552,4 +551,4 @@ a class of people who were not tormented by the speed and heat and faceless obsc
 shock and the terror of production and “a slap in the face of public taste” becomes an essential ideological hinge point which makes it much easier… to be a capitalist lol (aka an active participant, an urban consumer)
 In one way, this essay shows Tafuri’s attempt to reckon with how art and the city have dealt with and taken each other as subjects - but in a more real sense, it shows these two elements precisely at their point of disappearance, when they get hollowed out similarly to Lenin mentioned - once and for all
 Save Plan Obus for later lol
-Form - this is a big obsession with Tafuri throughout, and specifically how the contemporary notion of architecture as purely formal (which was more or less hammered into place over the 70s/80s) begins really with a Plan-type idea of the architect as an organizer. "exploiting the articulation of form at its highest level in order to make the public an active and conscious user of the architectural product”. it makes the capitalist world natural by working at an ideological/epistemological scale to direct activity in line w capitalist precepts and towards capitalist ends - not the least of which bc it flows from the mind of an ‘ur-capitalist' 
+Form - this is a big obsession with Tafuri throughout, and specifically how the contemporary notion of architecture as purely formal (which was more or less hammered into place over the 70s/80s) begins really with a Plan-type idea of the architect as an organizer. "exploiting the articulation of form at its highest level in order to make the public an active and conscious user of the architectural product”. it makes the capitalist world natural by working at an ideological/epistemological scale to direct activity in line w capitalist precepts and towards capitalist ends - not the least of which bc it flows from the mind of an ‘ur-capitalist'

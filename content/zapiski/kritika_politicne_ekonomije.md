@@ -3,8 +3,6 @@ title: Kritika politične ekonomije
 template: post
 ---
 
-<toc />
-
 ## III: Celotni proces kapitalistične produkcije
 
 ### 3. Zakon tendenčnega padanja profitne mere
