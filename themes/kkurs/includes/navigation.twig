@@ -1,6 +1,6 @@
 <nav role="navigation" tabindex="-1" id="nav">
   <ul class="flex-nav">
-    {% for page in pages(depth=null) if page.meta.template == "list" %}
+    {% for page in pages(depth=null) if page.meta.template != "list" %}
     <li>
       <a
         href="{{ page.url }}"
