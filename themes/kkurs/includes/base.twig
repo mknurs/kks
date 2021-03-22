@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>
-    {% if meta.title %}
-      {{ meta.title }} |
+    {% if meta.title == site_title %}
+        {{ site_title }}
+    {% else %}
+      {{ meta.title }} | {{ site_title }}
     {% endif %}
-      {{ site_title }}
   </title>
 
   {% if meta.description %}
@@ -30,7 +31,6 @@
   <!-- favicon -->
   <link rel="icon" type="image/svg+xml" href="{{ theme_url }}/img/favicon.svg">
   <link rel="alternate icon" href="{{ theme_url }}/img/favicon.png">
-  {% endblock %}
 
   <!-- og -->
   <meta property="og:title" content="{{ meta.title }}" />
@@ -38,21 +38,17 @@
   <meta property="og:image" content="{{ theme_url }}/img/og-image.png" />
   <meta property="og:url" content="{{ current_page.url }}" />
   <meta property="og:description" content="{{ meta.description|striptags }}" />
-
+  {% endblock %}
 
   <!-- stylesheets -->
+  {% block stylesheets %}
   <link rel="stylesheet" href="{{ theme_url }}/css/normalize.css" type="text/css" />
   <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
-
-  {% block stylesheets %}
-
   {% endblock %}
 
   <!-- scripts -->
+  {% block js_top %}
   <script async defer data-domain="kontrakurs.org" src="https://plausible.io/js/plausible.js"></script><!-- plausible -->
-
-  {% block jstop %}
-
   {% endblock %}
 </head>
 
