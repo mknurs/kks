@@ -2,7 +2,7 @@
 
 {% block content %}
 <main role="main" id="main" class="index">
-  {% for page in pages(depth=null)|sort_by(["modificationTime"])|reverse if page.meta.template == "post" %}
+  {% for page in pages(depth=null)|sort_by(["modificationTime"])|reverse if page.meta.template == "post" and not page.hidden %}
     {{ include("includes/card.twig") }}
   {% endfor %}
 </main>
