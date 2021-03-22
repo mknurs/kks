@@ -5,7 +5,6 @@
   {% block head %}
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="og:image" content="{{ theme_url }}/img/og-image.png" />
 
   <title>
     {% if meta.title %}
@@ -32,6 +31,13 @@
   <link rel="icon" type="image/svg+xml" href="{{ theme_url }}/img/favicon.svg">
   <link rel="alternate icon" href="{{ theme_url }}/img/favicon.png">
   {% endblock %}
+
+  <!-- og -->
+  <meta property="og:title" content="{{ meta.title }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="{{ theme_url }}/img/og-image.png" />
+  <meta property="og:url" content="{{ current_page.url }}" />
+
 
   <!-- stylesheets -->
   <link rel="stylesheet" href="{{ theme_url }}/css/normalize.css" type="text/css" />
