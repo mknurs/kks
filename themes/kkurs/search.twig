@@ -39,10 +39,10 @@
 
           {% set before = raw_text|split( search_terms )%}
           {% set replace_chars = {
-            ".":"",
-            ",":"",
-            "?":"",
-            "!":"",
+            "{.}":"{}",
+            "{,}":"{}",
+            "{?}":"{}",
+            "{!}":"{}",
           } %}
           {% set words = words|replace(replace_chars)|split( " " ) %}
           {#{{ search_terms }} #}
