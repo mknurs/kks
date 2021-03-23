@@ -4,17 +4,17 @@
 <main role="main" id="main" class="post">
   <article lang="{{ meta.lang ? meta.lang : 'sl' }}">
     <h1>
-      {{ title }}
+      {{ meta.title }}
     </h1>
 
     <address>
-      {% if author %}
-        {% if author is iterable %}
-          {% for author_idx in author %}
-            <span>{{ author_idx }}</span>
+      {% if meta.author %}
+        {% if meta.author is iterable %}
+          {% for author in meta.author %}
+            <span>{{ author }}</span>
           {% endfor %}
         {% else %}
-          <span>{{ author }}</span>
+          <span>{{ meta.author }}</span>
         {% endif %}
       {% endif %}
 
@@ -29,7 +29,7 @@
       {% endif %}
 
       <time datetime="{{ modificationTime|date('Y-m-d') }}">
-        {{ date|date("d. m. Y") }} ({{ modificationTime|date("d. m. Y G:i") }})
+        {{ meta.date|date("d. m. Y") }} ({{ modificationTime|date("d. m. Y G:i") }})
       </time>
     </address>
 
