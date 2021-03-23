@@ -44,7 +44,7 @@
             "?":"",
             "!":"",
           } %}
-          {% set words = search_terms|replace("/[^a-zA-Z0-9 ]/", "")|split( " " ) %}
+          {% set words = search_terms|replace({"/[^a-zA-Z0-9 ]/", ""})|split( " " ) %}
           {% for word in words %}
             {% if word in raw_text %}
               {% set occurences = raw_text|split(word) %}
