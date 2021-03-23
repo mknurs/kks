@@ -15,7 +15,11 @@
 <!-- external navigation -->
   <ul class="flex-nav">
     {% for page,link in pages["index"].meta.external %}
-      {{ page }}{{ link }}
+      <li>
+        <a href="{{ link }}">
+          {{ page }}
+        </a>
+      </li>
     {% endfor %}
   </ul>
 <!-- TODO -->
