@@ -36,7 +36,10 @@
           {{ include( "includes/address.twig", { author: page.author, source: page.meta.source, time: page.modificationTime } ) }}
 
           {% set raw_text = page.raw_content|split("---")[2] %}
+
           {% set before = raw_text|split( search_terms )%}
+
+          {{ search_terms }}
           {{ raw_text }}
 
           {#
