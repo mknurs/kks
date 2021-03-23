@@ -44,7 +44,7 @@
             "{?}":"{}",
             "{!}":"{}",
           } %}
-          {% set words = words|replace(replace_chars)|split( " " ) %}
+          {% set words = search_terms|replace(replace_chars)|split( " " ) %}
           {#{{ search_terms }} #}
           {% for word in words %}
           <div>{{ word }}</div>
