@@ -44,14 +44,17 @@
             "?":"",
             "!":"",
           } %}
-          {% set words = search_terms|replace({"/[^a-zA-Z0-9 ]/", ""})|split( " " ) %}
+          {% set words = search_terms %}
+          {% if words matches "/[^a-zA-Z0-9 ]/" %}
+            {% for char in words %}
+              {% if char matches "/[^a-zA-Z0-9 ]/" %}
+                {% set words = words|replace({ char:"" }) %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {{ words }}
           {% for word in words %}
-            {% if word in raw_text %}
-              {% set occurences = raw_text|split(word) %}
-                {% for occurence in occurences %}
-
-              {{  }}
-          <div>{{ word }}</div>
+            <div>{{ word }}</div>
           {% endfor %}
           {#{{ raw_text }}#}
 
