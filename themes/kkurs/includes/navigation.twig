@@ -14,8 +14,8 @@
   </ul>
 <!-- external navigation -->
   <ul class="flex-nav">
-    {% for page in pages["index"].meta.external %}
-      {{ page }}
+    {% for page,link in pages["index"].meta.external %}
+      {{ page }}{{ link }}
     {% endfor %}
   </ul>
 <!-- TODO -->
