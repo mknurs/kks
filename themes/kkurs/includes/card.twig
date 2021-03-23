@@ -26,7 +26,11 @@
       {% endif %}
 
       <time datetime="{{ page.modificationTime|date('Y-m-d') }}">
-        {{ page.date }}({{ page.modificationTime|date("d. m. Y G:i") }})
+        {% if page.date %}
+          {{ page.date|date("d. m. Y") }} ({{ page.modificationTime|date("d. m. Y G:i") }})
+        {% else %}
+          ({{ page.modificationTime|date("d. m. Y G:i") }})
+        {% endif %}
       </time>
     </address>
 
