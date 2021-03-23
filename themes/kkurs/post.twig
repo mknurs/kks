@@ -4,13 +4,13 @@
 <main role="main" id="main" class="post">
   <article lang="{{ meta.lang ? meta.lang : 'sl' }}">
     <h1>
-      {{ meta.title }}
+      {{ title }}
     </h1>
 
     <address>
       {% if author %}
         {% if author is iterable %}
-          {% for author_idx in meta.author %}
+          {% for author_idx in author %}
             <span>{{ author_idx }}</span>
           {% endfor %}
         {% else %}
