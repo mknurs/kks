@@ -38,7 +38,6 @@
           {% set raw_text = page.raw_content|split("---")[2] %}
 
           {% set words = search_terms %}
-          {% set new_words = "" %}
 
           {% for char in words|split("") %}
             {% if char matches "/[^a-zA-Z0-9 ]/" %}
@@ -46,8 +45,16 @@
             {% endif %}
           {% endfor %}
 
+          {% for word in words|split(" ") %}
+            {% if word in raw_text %}
+              {% for part in raw_text|split(word) %}
+                {{
+                  (part|split(".")|last ~ "**" ~ word ~ "**" ~ raw_text|split(word)[loop.index + 1])|markdown
+                }}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
           {{ words }}
-          {{ new_words }}
           {#{{ raw_text }}#}
 
           {#
