@@ -46,16 +46,12 @@
           } %}
           {% set words = search_terms %}
             {% for char in words|split("") %}
-              <span>{{ char }}</span>
               {% if char matches "/[^a-zA-Z0-9 ]/" %}
-                <span>yes {{ char }}</span>
                 {% set words = words|replace({ char:"" }) %}
+                <div>{{ loop.index }}{{ words }}</div>
               {% endif %}
             {% endfor %}
           {{ words }}
-          {% for word in words %}
-            <div>{{ word }}</div>
-          {% endfor %}
           {#{{ raw_text }}#}
 
           {#
