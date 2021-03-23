@@ -29,7 +29,7 @@
       {% endif %}
 
       <time datetime="{{ modificationTime|date('Y-m-d') }}">
-        {{ meta.date }} ({{ modificationTime|date("d. m. Y G:i") }})
+        {{ meta.date|date("d. m. Y") }} ({{ modificationTime|date("d. m. Y G:i") }})
       </time>
     </address>
 
