@@ -51,15 +51,9 @@
 
             {% for term in [wordCap, wordLow] %}
               {% if term in raw_text %}
-                {% for part in raw_text|split(term) %}
-                  {% if loop.index0 % 2 == 1 %}
-                    {% set before = part|split("\n\n")|last %}
-                    {% set after = raw_text|split(term)[loop.index]|split("\n\n")|first %}
-                    <div class="">
-                      {{ (before ~ "**" ~ term ~ "**" ~ after)|markdown }}
-                    </div>
-                  {% endif %}
-                {% endfor %}
+                {% set before = raw_text|split(term, 2)[0]|split("\n\n")|last %}
+                {% set after = raw_text|split(term, 2)[1]|split("\n\n")|first %}
+                    {{ (before ~ "**" ~ term ~ "**" ~ after)|markdown }}
               {% endif %}
             {% endfor %}
           {% endfor %}
