@@ -38,16 +38,16 @@
           {% set raw_text = page.raw_content|split("---")[2] %}
 
           {% set words = search_terms %}
+          {% set new_words = "" %}
 
           {% for char in words|split("") %}
             {% if char matches "/[^a-zA-Z0-9 ]/" %}
-              {% set words = words|replace({ char:"" }) %}
-              {% words|replace({ char:"" }) %}
-              <div>{{ loop.index }}{{ char }}</div>
+              {% set words = words|replace({ (char):"" }) %}
             {% endif %}
           {% endfor %}
 
           {{ words }}
+          {{ new_words }}
           {#{{ raw_text }}#}
 
           {#
