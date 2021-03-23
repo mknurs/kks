@@ -49,9 +49,9 @@
             {% if word in raw_text %}
               {% for part in raw_text|split(word) %}
                 {% set before = part|split(". ")|last %}
-                {% set after = raw_text|split(word)[loop.index]|split(".")[0] %}
+                {% set after = raw_text|split(word)[loop.index]|split(". ")[0] %}
                 {{
-                  (before ~ "**" ~ word ~ "**" ~ after ~ ".")|markdown
+                  (loop.index ~ ":" ~ before ~ "**" ~ word ~ "**" ~ after ~ ".")|markdown
                 }}
               {% endfor %}
             {% endif %}
