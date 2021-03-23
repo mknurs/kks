@@ -5,31 +5,6 @@
     </h2>
 
     {{ include( "includes/address.twig", { author: page.author, source: page.meta.source, time: page.modificationTime } ) }}
-    <address>
-      {% if page.author %}
-        {% if page.author is iterable %}
-          {% for author in page.author %}
-            <span>{{ author }}</span>
-          {% endfor %}
-        {% else %}
-          <span>{{ page.author }}</span>
-        {% endif %}
-      {% endif %}
-
-      {% if page.meta.source %}
-        {% if page.meta.source is iterable %}
-          {% for source in page.meta.source %}
-            <span>{{ source }}</span>
-          {% endfor %}
-        {% else %}
-          <span>{{ page.meta.source }}</span>
-        {% endif %}
-      {% endif %}
-
-      <time datetime="{{ page.modificationTime|date('Y-m-d') }}">
-        ({{ page.modificationTime|date("d. m. Y G:i") }})
-      </time>
-    </address>
 
     {% if page.description %}
       <blockquote>

@@ -7,31 +7,7 @@
       {{ meta.title }}
     </h1>
 
-    <address>
-      {% if meta.author %}
-        {% if meta.author is iterable %}
-          {% for author in meta.author %}
-            <span>{{ author }}</span>
-          {% endfor %}
-        {% else %}
-          <span>{{ meta.author }}</span>
-        {% endif %}
-      {% endif %}
-
-      {% if meta.source %}
-        {% if meta.source is iterable %}
-          {% for source in meta.source %}
-            <span>{{ source }}</span>
-          {% endfor %}
-        {% else %}
-          <span>{{ meta.source }}</span>
-        {% endif %}
-      {% endif %}
-
-      <time datetime="{{ modificationTime|date('Y-m-d') }}">
-        ({{ modificationTime|date("d. m. Y G:i") }})
-      </time>
-    </address>
+    {{ include( "includes/address.twig", { author: meta.author, source: meta.source, time: modificationTime } ) }}
 
     {{ content }}
   </article>
