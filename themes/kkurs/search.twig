@@ -38,9 +38,12 @@
           {% set raw_text = page.raw_content|split("---")[2] %}
 
           {% set before = raw_text|split( search_terms )%}
-
+          {% set words = search_terms|split( " " ) %}
           {{ search_terms }}
-          {{ raw_text }}
+          {% for word in words %}
+          <span>{{ word }}</span>
+          {% endfor %}
+          {#{{ raw_text }}#}
 
           {#
           {% if search_terms in page.raw_content|split("---", 3)[2] %}
