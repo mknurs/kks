@@ -35,11 +35,15 @@
 
           {{ include( "includes/address.twig", { author: page.author, source: page.meta.source, time: page.modificationTime } ) }}
 
+          {{ page.raw_content }}
+
+          {#
           {% if search_terms in page.raw_content|split("---", 3)[2] %}
             {{ ("…" ~ page.raw_content|split("---", 3)[2]|split(search_terms, 2)[0]|slice(-200) ~ "**" ~ search_terms ~ "**" ~ page.raw_content|split("---", 3)[2]|split(search_terms, 2)[1]|slice(0, 200) ~ "…")|markdown }}
           {% elseif search_terms|capitalize in page.raw_content|split("---", 3)[2] %}
           {{ ("…" ~ page.raw_content|split("---", 3)[2]|split(search_terms|capitalize, 2)[0]|slice(-200) ~ "**" ~ search_terms|capitalize ~ "**" ~ page.raw_content|split("---", 3)[2]|split(search_terms|capitalize, 2)[1]|slice(0, 200) ~ "…")|markdown }}
           {% endif %}
+          #}
         </article>
       {% endfor %}
     {% else %}
