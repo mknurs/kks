@@ -51,7 +51,7 @@
 
             {% if wordCap in raw_text %}
               {% for match in raw_text|split(word) %}
-                {% set before = part|split(". ")|last %}
+                {% set before = match|split(". ")|last %}
                 {% set after = raw_text|split(word)[loop.index]|split(".")[0] %}
                 {{ (before ~ "**" ~ wordCap ~ "**" ~ after ~ ".")|markdown }}
               {% endfor %}
@@ -59,7 +59,7 @@
 
             {% if wordLow in raw_text %}
               {% for match in raw_text|split(word) %}
-                {% set before = part|split(". ")|last %}
+                {% set before = match|split(". ")|last %}
                 {% set after = raw_text|split(word)[loop.index]|split(".")[0] %}
                 {{ (before ~ "**" ~ wordLow ~ "**" ~ after ~ ".")|markdown }}
               {% endfor %}
