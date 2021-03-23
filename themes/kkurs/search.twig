@@ -26,46 +26,7 @@
       <h1>Zadetki za <i>{{ search_terms|e('html') }}</i></h1>
 
       {% for page in search_results %}
-        <article>
-          <h2>
-            <a href="{{ page.url }}">
-              {{ page.title }}
-            </a>
-          </h2>
-
-          {{ include( "includes/address.twig", { author: page.author, source: page.meta.source, time: page.modificationTime } ) }}
-
-          {% set raw_text = page.raw_content|split("---")[2] %}
-
-          {% set words = search_terms %}
-
-          {% for char in words|split("") %}
-            {% if char matches "/[^a-zA-Z0-9 ]/" %}
-              {% set words = words|replace({ (char):"" }) %}
-            {% endif %}
-          {% endfor %}
-
-          {% for word in words|split(" ") %}
-            {% set wordCap = word|title %}
-            {% set wordLow = word|lower %}
-
-            {% for term in [wordCap, wordLow] %}
-              {% if term in raw_text %}
-                {% set before = raw_text|split(term, 2)[0]|split("\n\n")|last %}
-                {% set after = raw_text|split(term, 2)[1]|split("\n\n")|first %}
-                    {{ (before ~ "**" ~ term ~ "**" ~ after)|markdown }}
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
-
-          {#
-          {% if search_terms in page.raw_content|split("---", 3)[2] %}
-            {{ ("…" ~ page.raw_content|split("---", 3)[2]|split(search_terms, 2)[0]|slice(-200) ~ "**" ~ search_terms ~ "**" ~ page.raw_content|split("---", 3)[2]|split(search_terms, 2)[1]|slice(0, 200) ~ "…")|markdown }}
-          {% elseif search_terms|capitalize in page.raw_content|split("---", 3)[2] %}
-          {{ ("…" ~ page.raw_content|split("---", 3)[2]|split(search_terms|capitalize, 2)[0]|slice(-200) ~ "**" ~ search_terms|capitalize ~ "**" ~ page.raw_content|split("---", 3)[2]|split(search_terms|capitalize, 2)[1]|slice(0, 200) ~ "…")|markdown }}
-          {% endif %}
-          #}
-        </article>
+        {% include("includes/card.twig") %}
       {% endfor %}
     {% else %}
       <p>Ni zadetkov za {{ search_terms|e('html') }}.</p>
