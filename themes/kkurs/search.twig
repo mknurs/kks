@@ -52,7 +52,7 @@
             {% for term in [wordCap, wordLow] %}
               {% if term in raw_text %}
                 {% for part in raw_text|split(term) %}
-                  {% if loop.index0 % 2 == 0 %}
+                  {% if loop.index0 % 2 == 1 %}
                     {% set before = part|split("\n\n")|last %}
                     {% set after = raw_text|split(term)[loop.index]|split("\n\n")|first %}
                     <div class="">
