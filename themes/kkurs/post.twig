@@ -8,13 +8,13 @@
     </h1>
 
     <address>
-      {% if meta.author %}
-        {% if meta.author is iterable %}
-          {% for author in meta.author %}
-            <span>{{ author }}</span>
+      {% if author %}
+        {% if author is iterable %}
+          {% for author_idx in meta.author %}
+            <span>{{ author_idx }}</span>
           {% endfor %}
         {% else %}
-          <span>{{ meta.author }}</span>
+          <span>{{ author }}</span>
         {% endif %}
       {% endif %}
 
@@ -29,7 +29,7 @@
       {% endif %}
 
       <time datetime="{{ modificationTime|date('Y-m-d') }}">
-        {{ meta.date|date("d. m. Y") }} ({{ modificationTime|date("d. m. Y G:i") }})
+        {{ date|date("d. m. Y") }} ({{ modificationTime|date("d. m. Y G:i") }})
       </time>
     </address>
 
