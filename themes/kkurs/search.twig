@@ -6,8 +6,8 @@
     pages("dokumenti", depth=null) +
     pages("zapiski", depth=null)
   )|filter(p => not p.hidden) %}
+{% set pagesArr = pages(depth=null)|filter(p => p.meta.template == "post" and not p.hidden)%}
 <form id="search_form" action="{{ "search"|link }}">
-  {# <label for="search_input">Išči na strani:</label> #}
   <input type="search" id="search_input" name="q" value="{{ search_terms|e('html_attr') }}" placeholder="išči kontrakurs"/>
   <button type="submit" id="search_submit">išči</button>
 </form>

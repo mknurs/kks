@@ -4,6 +4,7 @@
       {{ page.title }}
     </h2>
 
+    {{ include( "includes/address.twig", { author: page.author, source: page.meta.source, time: page.modificationTime }) ) }}
     <address>
       {% if page.author %}
         {% if page.author is iterable %}

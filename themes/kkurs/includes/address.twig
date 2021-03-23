@@ -1,0 +1,25 @@
+<address>
+  {% if author %}
+    {% if author is iterable %}
+      {% for i in author %}
+        <span>{{ i }}</span>
+      {% endfor %}
+    {% else %}
+      <span>{{ author }}</span>
+    {% endif %}
+  {% endif %}
+
+  {% if source %}
+    {% if source is iterable %}
+      {% for i in source %}
+        <span>{{ i }}</span>
+      {% endfor %}
+    {% else %}
+      <span>{{ source }}</span>
+    {% endif %}
+  {% endif %}
+
+  <time datetime="{{ time|date('Y-m-d') }}">
+    ({{ time|date("d. m. Y G:i") }})
+  </time>
+</address>
