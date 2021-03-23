@@ -48,7 +48,7 @@
             {% for char in words|split("") %}
               {% if char matches "/[^a-zA-Z0-9 ]/" %}
                 {% set words = words|replace({ char:"" }) %}
-                <div>{{ loop.index }}{{ words }}</div>
+                <div>{{ loop.index }}{{ char }}</div>
               {% endif %}
             {% endfor %}
           {{ words }}
