@@ -6,7 +6,13 @@
 
     <address>
       {% if page.author %}
-        <span>{{ page.author }}</span>
+        {% if page.author is iterable %}
+          {% for author in page.author %}
+            <span>{{ author }}</span>
+          {% endfor %}
+        {% else %}
+          <span>{{ page.author }}</span>
+        {% endif %}
       {% endif %}
 
       {% if page.meta.source %}
