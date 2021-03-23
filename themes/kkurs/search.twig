@@ -49,7 +49,7 @@
             {% if word in raw_text %}
               {% for part in raw_text|split(word) %}
                 {{
-                  (part|split(".")|last ~ "**" ~ word ~ "**" ~ raw_text|split(word)[loop.index + 1])|markdown
+                  (part|split(".")|last ~ "**" ~ word ~ "**" ~ raw_text|split(word)[loop.index + 1]|split(".")[0])|markdown
                 }}
               {% endfor %}
             {% endif %}
