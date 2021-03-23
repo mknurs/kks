@@ -8,14 +8,28 @@
     </h1>
 
     <address>
-      {{ meta.author }}
-      {% if meta.source %}
-      <span>
-        {{ meta.source }}
-      </span>
+      {% if meta.author %}
+        {% if meta.author is iterable %}
+          {% for author in meta.author %}
+            <span>{{ author }}</span>
+          {% endfor %}
+        {% else %}
+          <span>{{ meta.author }}</span>
+        {% endif %}
       {% endif %}
-      <time datetime="{{ meta.modificationTime|date('Y-m-d') }}">
-        ({{ meta.modificationTime|date("d. m. Y G:i") }})
+
+      {% if meta.source %}
+        {% if meta.source is iterable %}
+          {% for source in meta.source %}
+            <span>{{ source }}</span>
+          {% endfor %}
+        {% else %}
+          <span>{{ meta.source }}</span>
+        {% endif %}
+      {% endif %}
+
+      <time datetime="{{ modificationTime|date('Y-m-d') }}">
+        {{ meta.date }}({{ modificationTime|date("d. m. Y G:i") }})
       </time>
     </address>
 
