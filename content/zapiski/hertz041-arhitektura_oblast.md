@@ -5,7 +5,7 @@ source: Hertz arhitektur, Radio študent, 22. 03. 2021.
 template: post
 ---
 
-*Besedilo je bilo pripravljeno za radijsko oddajo Hertz arhitektur na Radiu študent. Posnetek oddaje je dostopen na (povezavi)[https://radiostudent.si/kultura/hertz-arhitektur/arhitektura-in-oblast].*
+*Besedilo je bilo pripravljeno za radijsko oddajo Hertz arhitektur na Radiu študent. Posnetek oddaje je dostopen na [povezavi](https://radiostudent.si/kultura/hertz-arhitektur/arhitektura-in-oblast).*
 
 Spoštovane in spoštovani. Poslušate enainštirideseto oddajo Hertz Arhitektur.
 
