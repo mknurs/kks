@@ -37,21 +37,16 @@
 
           {% set raw_text = page.raw_content|split("---")[2] %}
 
-          {% set before = raw_text|split( search_terms )%}
-          {% set replace_chars = {
-            ".":"",
-            ",":"",
-            "?":"",
-            "!":"",
-          } %}
           {% set words = search_terms %}
-            {% for char in words|split("") %}
-              {% if char matches "/[^a-zA-Z0-9 ]/" %}
-                {% set words = words|replace({ char:"" }) %}
-                {{ words|replace({ char:"" }) }}
-                <div>{{ loop.index }}{{ char }}</div>
-              {% endif %}
-            {% endfor %}
+
+          {% for char in words|split("") %}
+            {% if char matches "/[^a-zA-Z0-9 ]/" %}
+              {% set words = words|replace({ char:"" }) %}
+              {% words|replace({ char:"" }) %}
+              <div>{{ loop.index }}{{ char }}</div>
+            {% endif %}
+          {% endfor %}
+
           {{ words }}
           {#{{ raw_text }}#}
 
