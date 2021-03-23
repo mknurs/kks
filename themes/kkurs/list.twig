@@ -2,24 +2,8 @@
 
 {% block content %}
 <main role="main" id="main" class="list">
-  {% set pagesArr = pages(current_page.id, depth=null)|filter(p => not p.hidden)|sort_by(["modificationTime"])|reverse %}
-  {% for page in pagesArr %}
-    <article>
-      <h2><a href="{{ page.url }}">
-        {{ page.title }}
-      </a></h2>
-
-      <address>
-        {{ page.author }}
-        {% if page.meta.source %}
-          <span>{{ page.meta.source }}</span>
-        {% endif %}
-        <time datetime="{{ page.modificationTime|date('Y-m-d') }}">
-          ({{ page.modificationTime|date("d. m. Y G:i") }})
-        </time>
-      </address>
-
-    </article>
+  {% for page in pages(current_page.id, depth=null)|sort_by(["modificationTime"])|reverse if page.meta.template == "post" and not page.hidden %}
+    {{ include("includes/card.twig") }}
   {% endfor %}
 </main>
 {% endblock %}
