@@ -38,12 +38,13 @@
           {% set raw_text = page.raw_content|split("---")[2] %}
 
           {% set before = raw_text|split( search_terms )%}
-          {% set replace_chars = [".", ",", "!", "?"] %}
-          {% set words = search_terms|replace({ ".":"", ",":"", "!":"", "?":"" }) %}
-          {% for char in replace_chars %}
-            {% set words = words|replace({ char:"" }) %}
-          {% endfor %}
-          {% set words = words|split( " " ) %}
+          {% set replace_chars = {
+            ".":"",
+            ",":"",
+            "?":"",
+            "!":"",
+          } %}
+          {% set words = words|replace(replace_chars)|split( " " ) %}
           {#{{ search_terms }} #}
           {% for word in words %}
           <div>{{ word }}</div>
