@@ -1,5 +1,5 @@
 ---
 title: dokumenti
 template: list
-Placing: 3
+placing: 3
 ---

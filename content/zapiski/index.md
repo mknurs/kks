@@ -1,5 +1,5 @@
 ---
-Title: zapiski
-Template: list
-Placing: 2
+title: zapiski
+template: list
+placing: 2
 ---
