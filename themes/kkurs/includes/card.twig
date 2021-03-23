@@ -16,11 +16,17 @@
       {% endif %}
 
       {% if page.meta.source %}
-        <span>{{ page.meta.source }}</span>
+        {% if page.meta.source is iterable %}
+          {% for source in page.meta.source %}
+            <span>{{ source }}</span>
+          {% endfor %}
+        {% else %}
+          <span>{{ page.meta.source }}</span>
+        {% endif %}
       {% endif %}
 
       <time datetime="{{ page.modificationTime|date('Y-m-d') }}">
-        ({{ page.modificationTime|date("d. m. Y G:i") }})
+        {{ page.date }}({{ page.modificationTime|date("d. m. Y G:i") }})
       </time>
     </address>
 
