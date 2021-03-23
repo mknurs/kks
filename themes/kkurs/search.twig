@@ -50,17 +50,17 @@
             {% set wordLow = word|lower %}
 
             {% if wordCap in raw_text %}
-              {% for part in raw_text|split(word) %}
-                {% set before = raw_text|split(word)[loop.index0]|split(".")|last %}
-                {% set after = raw_text|split(word)[loop.index]|split(".")[0] %}
+              {% for part in raw_text|split(wordCap) %}
+                {% set before = part|split("\n\n")|last %}
+                {% set after = raw_text|split(wordCap)[loop.index]|split("\n\n")|first %}
                 {{ (before ~ "**" ~ wordCap ~ "**" ~ after ~ ".")|markdown }}
               {% endfor %}
             {% endif %}
 
             {% if wordLow in raw_text %}
-              {% for part in raw_text|split(word) %}
-                {% set before = raw_text|split(word)[loop.index0]|split(".")|last %}
-                {% set after = raw_text|split(word)[loop.index]|split(".")[0] %}
+              {% for part in raw_text|split(wordLow) %}
+                {% set before = part|split("\n\n")|last %}
+                {% set after = raw_text|split(wordLow)[loop.index]|split("\n\n")|first %}
                 {{ (before ~ "**" ~ wordLow ~ "**" ~ after ~ ".")|markdown }}
               {% endfor %}
             {% endif %}
