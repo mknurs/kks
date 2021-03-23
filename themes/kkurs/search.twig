@@ -56,7 +56,7 @@
                     {% set before = part|split("\n\n")|last %}
                     {% set after = raw_text|split(term)[loop.index]|split("\n\n")|first %}
                     <div class="">
-                      {{ (before ~ "**" ~ term ~ "**" ~ after) }}
+                      {{ (before ~ "**" ~ term ~ "**" ~ after)|markdown }}
                     </div>
                   {% endif %}
                 {% endfor %}
