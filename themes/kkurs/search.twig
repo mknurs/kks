@@ -38,10 +38,15 @@
           {% set raw_text = page.raw_content|split("---")[2] %}
 
           {% set before = raw_text|split( search_terms )%}
-          {% set words = search_terms|split( " " ) %}
-          {{ search_terms }}
+          {% set replace_chars = [".", ",", "!", "?"] %}
+          {% set words = search_terms %}
+          {% for char in replace_chars %}
+            {% set words = words|replace({ char:"" }) %}
+          {% endfor %}
+          {% set words = words|split( " " ) %}
+          {#{{ search_terms }} #}
           {% for word in words %}
-          <span>{{ word }}</span>
+          <div>{{ word }}</div>
           {% endfor %}
           {#{{ raw_text }}#}
 
