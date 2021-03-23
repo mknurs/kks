@@ -45,13 +45,11 @@
             "!":"",
           } %}
           {% set words = search_terms %}
-          {% if words matches "/[^a-zA-Z0-9 ]/" %}
             {% for char in words %}
               {% if char matches "/[^a-zA-Z0-9 ]/" %}
                 {% set words = words|replace({ char:"" }) %}
               {% endif %}
             {% endfor %}
-          {% endif %}
           {{ words }}
           {% for word in words %}
             <div>{{ word }}</div>
