@@ -12,7 +12,9 @@ variables
   --blue: #0000EE;
   --purple: #551A8B;
   --red: #FF0000;
+	/* margins */
 
+	/* colors */
   --link: var(--blue);
   --visited: var(--purple);
   --active: var(--red);
@@ -98,7 +100,6 @@ h6 {
 }
 h1 {
   font-size: 2rem;
-  text-align: center;
 }
 h2 {
   font-size: 1.7rem;
