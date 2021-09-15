@@ -6,3 +6,4 @@ external:
   "krožek na MOTW": https://krozek.memoryoftheworld.org/
 ---
 <!-- pages() ignorira -->
+<!-- test -->
