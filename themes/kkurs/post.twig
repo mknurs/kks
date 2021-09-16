@@ -1,37 +1,16 @@
 {% extends "includes/base.twig" %}
 
 {% block content %}
-<main role="main" id="main" class="post">
+<main role="main">
   <article lang="{{ meta.lang ? meta.lang : 'sl' }}">
-    <h1>
-      {{ meta.title }}
-    </h1>
-
-    {{ include( "includes/address.twig", { author: meta.author, source: meta.source, time: modificationTime } ) }}
-
+    <header>
+      <h1>
+        {{ meta.title }}
+      </h1>
+      {{ include( "includes/address.twig", { author: meta.author, source: meta.source, time: modificationTime } ) }}
+    </header>
     {{ content }}
   </article>
-
-  {% for page in pages(current_page.id) %}
-  <article lang="{{ page.meta.lang ? page.meta.lang : 'sl' }}">
-    <h1>
-      {{ page.title }}
-    </h1>
-
-    <address>
-      {{ page.author }}
-      {% if page.meta.source %}
-      <span>
-        {{ page.meta.source }}
-      </span>
-      {% endif %}
-      <time datetime="{{ page.modificationTime|date('Y-m-d') }}">
-        ({{ page.modificationTime|date("d. m. Y G:i") }})
-      </time>
-    </address>
-
-    {{ page.id|content }}
-  </article>
-  {% endfor %}
+  <!-- TODO: related pages -->
 </main>
 {% endblock %}

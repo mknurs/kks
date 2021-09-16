@@ -1,26 +1,33 @@
-<nav role="navigation" tabindex="-1" id="nav">
-<!-- internal navigation -->
-  <ul class="flex-nav">
-    {% for page in pages(depth=null)|sort_by([ "meta", "placing" ]) if page.meta.template != "post" %}
-    <li>
-      <a
-        href="{{ page.url }}"
-        class={{ page.id == current_page.id ? "active" : ""}}
-      >
-        {{ page.title }}
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-<!-- external navigation -->
-  <ul class="flex-nav">
-    {% for page,link in pages["index"].meta.external %}
-      <li>
-        <a href="{{ link }}" target="_blank" rel="noopener noreferrer">
-          {{ page }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-<!-- TODO -->
-</nav>
+{% set nav = pages["index"].meta.nav %}
+{% if nav %}
+  <nav role="navigation" tabindex="-1">
+    <!-- internal navigation -->
+    {% if nav.internal %}
+      <ul class="flex-nav">
+        {% for page in nav.internal %}
+          {% set p = pages[page] %}
+          <li>
+            <a
+              href="{{ p.url }}"
+              class="{{ p.id == current_page.id ? "active" : "" }}"
+              >
+              {{ p.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <!-- external navigation -->
+    {% if nav.external %}
+      <ul class="flex-nav">
+        {% for page,link in nav.external %}
+          <li>
+            <a href="{{ link }}" target="_blank" rel="noopener noreferrer">
+              {{ page }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </nav>
+{% endif %}

@@ -1,5 +1,5 @@
 /*
-* prolerue theme
+* kkurs theme
 *
 * @author  mknurs
 * @license http://opensource.org/licenses/MIT The MIT License
@@ -43,7 +43,7 @@ base
 html {
   font-family: 'Alegreya', serif;
   font-size: clamp(16px, calc(1vw + 1vh + 0.5vmin), 22px);
-  line-height: 1.5;
+  line-height: 1.25;
   hyphens: auto;
 }
 hr::before {
@@ -58,22 +58,17 @@ hr::before {
 .active {
   font-weight: bold;
 }
-address {
-  display: grid;
-}
-article {
-  padding: 0.5rem;
-}
-h1 {
+header>h1 {
   text-align: center;
 }
+
 /*
 layout
 */
-#header,
-#nav,
-#main,
-#footer {
+body>header,
+body>nav,
+body>main,
+body>footer {
   margin: 0 auto;
   max-width: var(--txt-width);
 }
@@ -93,9 +88,10 @@ flex nav
 }
 
 /*
-index
+index, list
 */
-.index {
+.index>main,
+.list>main {
   display: grid;
   gap: 0.5rem;
 }
@@ -103,77 +99,31 @@ index
 card
 */
 .card {
-  display: grid;
   text-decoration: none;
-}
-.card>* {
-  grid-area: 1 / 1 / -1 / -1;
 }
 .card>article>* {
   text-decoration: underline;
 }
-.card>article {
-  position: relative;
-  display: grid;
-  align-items: center;
-}
-.card>svg {
-  z-index: -1;
-  fill: currentColor;
+.card h2 {
+  margin-bottom: 0;
 }
 
 /*
 single
 */
-.post {
-  max-width: unset!important;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(calc(0.5 * var(--txt-width)), 1fr));
-  justify-items: center;
-}
-.post>article {
-  max-width: var(--txt-width);
-}
-#toc>ul {
-  list-style: none;
-  display: block;
-}
-.toc-h2 {
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-.toc-h3 {
-  margin-left: 2rem;
-}
-.toc-h4 {
-  margin-left: 3rem;
-}
-/*
-list
-*/
-.list {
-  display: grid;
-  gap: 0.5rem;
-}
 
 /*
-search, lock
+search
 */
-.search,
-.lock {
+.search>main {
   display: grid;
   gap: 0.5rem;
 }
-.search>form,
-.lock>form {
+.search form {
   display: grid;
 }
-.search>form>button,
-.lock>form>button {
+.search form>button {
   place-self: center;
-}
-.search>article {
-  font-size: smaller;
 }
 
 /*

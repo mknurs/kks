@@ -1,7 +1,7 @@
 {% extends "includes/base.twig" %}
 
 {% block content %}
-<main role="main" id="main" class="index">
+  <main role="main">
   {% for page in pages(depth=null)|sort_by(["modificationTime"])|reverse if page.meta.template == "post" and not page.hidden %}
     {{ include("includes/card.twig") }}
   {% endfor %}

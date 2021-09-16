@@ -1,7 +1,7 @@
 {% extends "includes/base.twig" %}
 
 {% block content %}
-<main role="main" id="main" class="search">
+<main role="main">
   {% set pagesArr = pages(depth=null)|filter(p => p.meta.template == "post" and not p.hidden)%}
 
   <form id="search_form" action="{{ "search"|link }}">
@@ -23,8 +23,6 @@
     {% set search_results = pagesArr|apply_search %}
 
     {% if search_results %}
-      <h1>Zadetki za <i>{{ search_terms|e('html') }}</i></h1>
-
       {% for page in search_results %}
         {% include("includes/card.twig") %}
       {% endfor %}
