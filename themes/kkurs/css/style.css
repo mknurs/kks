@@ -62,9 +62,22 @@ header>h1 {
   text-align: center;
 }
 
+html {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+html::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
 /*
 layout
 */
+body {
+  padding: 1rem;
+}
 body>header,
 body>nav,
 body>main,
@@ -111,7 +124,10 @@ card
 /*
 single
 */
-
+.post article header {
+  max-width: 80%;
+  margin: 1em auto 2em;
+}
 /*
 search
 */
